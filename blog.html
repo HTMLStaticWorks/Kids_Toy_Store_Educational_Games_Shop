@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parenting & Education Blog - WonderToys</title>
+  <meta name="description" content="Expert parenting advice, STEM learning guides, toy safety tips, and child development articles from child psychologists and educators.">
+  <meta name="keywords" content="parenting blog, STEM education articles, child development, screen free play, toy safety guide">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <i class="fas fa-gift me-2"></i> <strong>Special Offer:</strong> Free Express Shipping on Educational & STEM Orders Over $49! <a href="shop.html" class="ms-2">Shop Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header-sticky">
+    <nav class="navbar navbar-expand-xl py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+          <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-lg text-primary"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-menu navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home 1 - Playful Retail</a></li>
+                <li><a class="dropdown-item" href="home-2.html">Home 2 - Educational Boutique</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="gift-guide.html">Gift Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="featured-brands.html">Brands</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item d-xl-none mt-2 pt-2 border-top">
+              <a href="signup.html" class="btn btn-toy-primary w-100 text-center"><i class="fas fa-user-plus me-1"></i> Sign Up</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <button class="header-action-btn theme-toggle-btn" title="Toggle Theme">
+              <i class="fas fa-moon text-primary"></i>
+            </button>
+            <button class="header-action-btn rtl-toggle-btn" title="Toggle RTL/LTR Layout" onclick="toggleRTL()">RTL</button>
+            <a href="wishlist.html" class="header-action-btn" title="Wishlist">
+              <i class="far fa-heart"></i>
+              <span class="badge-count wishlist-badge-count">0</span>
+            </a>
+            <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="badge-count cart-badge-count">0</span>
+            </a>
+            <a href="signup.html" class="btn btn-toy-primary d-none d-xl-inline-flex">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="py-5 bg-white border-bottom text-center">
+    <div class="container">
+      <span class="text-primary fw-bold text-uppercase"><i class="fas fa-book-open me-1"></i> Playful Learning Journal</span>
+      <h1 class="display-4 fw-bold mb-3">Parenting & Educational Blog</h1>
+      <p class="lead text-secondary max-w-2xl mx-auto">Insights, research-backed guides, and expert advice on STEM learning, screen-free play, and child development.</p>
+    </div>
+  </section>
+
+  <!-- Blog Main -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Articles Grid Column -->
+        <div class="col-lg-8">
+          <div class="row g-4">
+
+            <!-- Article 1 -->
+            <div class="col-md-6">
+              <div class="blog-card hover-lift">
+                <img src="assets/images/blog/blog-1.jpg" alt="STEM Learning Habits" class="blog-card-img">
+                <div class="p-4">
+                  <span class="badge bg-primary rounded-pill mb-2">STEM Learning</span>
+                  <h4 class="fw-bold mb-2"><a href="blog-details.html" class="text-dark hover-text-primary">5 Essential STEM Habits Every Child Should Develop Before Age 8</a></h4>
+                  <p class="text-secondary small mb-3">How hands-on coding bots and magnetic block puzzles build long-term critical thinking skills.</p>
+                  <div class="d-flex align-items-center justify-content-between text-muted small pt-3 border-top">
+                    <span><i class="far fa-user me-1"></i> Dr. Sarah Lin</span>
+                    <span><i class="far fa-clock me-1"></i> 5 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-6">
+              <div class="blog-card hover-lift">
+                <img src="assets/images/blog/blog-2.jpg" alt="Screen Free Play" class="blog-card-img">
+                <div class="p-4">
+                  <span class="badge bg-success rounded-pill mb-2">Child Development</span>
+                  <h4 class="fw-bold mb-2"><a href="blog-details.html" class="text-dark hover-text-primary">The Power of Wooden Toys in Screen-Free Play</a></h4>
+                  <p class="text-secondary small mb-3">Why tactile wooden blocks and Montessori toys improve fine motor control and imagination.</p>
+                  <div class="d-flex align-items-center justify-content-between text-muted small pt-3 border-top">
+                    <span><i class="far fa-user me-1"></i> Mark Davis</span>
+                    <span><i class="far fa-clock me-1"></i> 4 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-6">
+              <div class="blog-card hover-lift">
+                <img src="assets/images/blog/blog-3.jpg" alt="Toy Safety Guide" class="blog-card-img">
+                <div class="p-4">
+                  <span class="badge bg-danger rounded-pill mb-2">Toy Safety</span>
+                  <h4 class="fw-bold mb-2"><a href="blog-details.html" class="text-dark hover-text-primary">Understanding Safety Certifications in Educational Toys</a></h4>
+                  <p class="text-secondary small mb-3">A parent's checklist for verifying non-toxic, BPA-free, and lead-free toy safety standards.</p>
+                  <div class="d-flex align-items-center justify-content-between text-muted small pt-3 border-top">
+                    <span><i class="far fa-user me-1"></i> Ellen White</span>
+                    <span><i class="far fa-clock me-1"></i> 6 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="col-md-6">
+              <div class="blog-card hover-lift">
+                <img src="assets/images/blog/blog-1.jpg" alt="Cooperative Board Games" class="blog-card-img">
+                <div class="p-4">
+                  <span class="badge bg-warning text-dark rounded-pill mb-2">Screen-Free Play</span>
+                  <h4 class="fw-bold mb-2"><a href="blog-details.html" class="text-dark hover-text-primary">10 Cooperative Board Games That Teach Teamwork & Social Skills</a></h4>
+                  <p class="text-secondary small mb-3">Why non-competitive family games reduce anxiety and foster healthy problem-solving habits in toddlers.</p>
+                  <div class="d-flex align-items-center justify-content-between text-muted small pt-3 border-top">
+                    <span><i class="far fa-user me-1"></i> Claire Thompson</span>
+                    <span><i class="far fa-clock me-1"></i> 5 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="col-md-6">
+              <div class="blog-card hover-lift">
+                <img src="assets/images/blog/blog-2.jpg" alt="Montessori Play Nook" class="blog-card-img">
+                <div class="p-4">
+                  <span class="badge bg-info text-dark rounded-pill mb-2">Montessori</span>
+                  <h4 class="fw-bold mb-2"><a href="blog-details.html" class="text-dark hover-text-primary">How to Create an Engaging Montessori Play Nook at Home</a></h4>
+                  <p class="text-secondary small mb-3">Simple shelf setup tips and toy rotation techniques to keep young children focused and self-motivated.</p>
+                  <div class="d-flex align-items-center justify-content-between text-muted small pt-3 border-top">
+                    <span><i class="far fa-user me-1"></i> Marcus Vance</span>
+                    <span><i class="far fa-clock me-1"></i> 7 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="col-md-6">
+              <div class="blog-card hover-lift">
+                <img src="assets/images/blog/blog-3.jpg" alt="Outdoor Cognitive Growth" class="blog-card-img">
+                <div class="p-4">
+                  <span class="badge bg-secondary rounded-pill mb-2">Outdoor Fun</span>
+                  <h4 class="fw-bold mb-2"><a href="blog-details.html" class="text-dark hover-text-primary">The Science of Outdoor Play: Boosting Cognitive Growth</a></h4>
+                  <p class="text-secondary small mb-3">How gross motor activities, sandbox building, and nature exploration activate spatial awareness in kids.</p>
+                  <div class="d-flex align-items-center justify-content-between text-muted small pt-3 border-top">
+                    <span><i class="far fa-user me-1"></i> Dr. Sarah Lin</span>
+                    <span><i class="far fa-clock me-1"></i> 4 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <nav class="mt-5" aria-label="Blog pagination">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link rounded-circle me-2" href="#">&laquo;</a></li>
+              <li class="page-item active"><a class="page-link rounded-circle me-2" href="#">1</a></li>
+              <li class="page-item"><a class="page-link rounded-circle me-2" href="#">2</a></li>
+              <li class="page-item"><a class="page-link rounded-circle" href="#">&raquo;</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 100px;">
+            <h5 class="fw-bold mb-3">Search Articles</h5>
+            <form class="d-flex gap-2 mb-4" onsubmit="event.preventDefault();">
+              <input type="text" class="form-control rounded-pill" placeholder="Search blog...">
+              <button class="btn btn-toy-primary rounded-pill"><i class="fas fa-search"></i></button>
+            </form>
+
+            <h5 class="fw-bold mb-3">Categories</h5>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><a href="#" class="text-secondary d-flex justify-content-between"><span>STEM Education</span> <strong>(18)</strong></a></li>
+              <li class="mb-2"><a href="#" class="text-secondary d-flex justify-content-between"><span>Child Development</span> <strong>(14)</strong></a></li>
+              <li class="mb-2"><a href="#" class="text-secondary d-flex justify-content-between"><span>Toy Safety</span> <strong>(9)</strong></a></li>
+              <li class="mb-2"><a href="#" class="text-secondary d-flex justify-content-between"><span>Screen-Free Play</span> <strong>(22)</strong></a></li>
+            </ul>
+
+            <div class="p-4 rounded-4 bg-primary text-white text-center">
+              <i class="fas fa-envelope-open-text fa-3x mb-3"></i>
+              <h5 class="fw-bold mb-2">Get Free Play Guides</h5>
+              <p class="small text-white-50 mb-3">Weekly educational activities delivered to your inbox.</p>
+              <form class="newsletter-form">
+                <input type="email" class="form-control rounded-pill mb-2" placeholder="Your email..." required>
+                <button type="submit" class="btn btn-toy-secondary w-100 rounded-pill">Join VIP Club</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Store Story -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center gap-2" href="index.html">
+            <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+            <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+          </a>
+          <p class="text-muted mb-4">Empowering the next generation through playful discovery, STEM learning kits, wooden craftsmanship, and creative toys designed for curious minds.</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Toy Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?cat=stem">STEM Kits</a></li>
+            <li><a href="shop.html?cat=wooden">Wooden Toys</a></li>
+            <li><a href="shop.html?cat=board-games">Board Games</a></li>
+            <li><a href="shop.html?cat=puzzles">Puzzles</a></li>
+            <li><a href="shop.html?cat=outdoor">Outdoor Fun</a></li>
+            <li><a href="shop.html?cat=baby">Baby & Toddler</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Support -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Store Locator & Hours</a></li>
+            <li><a href="gift-guide.html">Seasonal Gift Guide</a></li>
+            <li><a href="featured-brands.html">Featured Brands</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Secure Checkout</a></li>
+            <li><a href="contact.html">WhatsApp Support (UI)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <p class="text-muted mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> 123 Playful Way, Wonder City, NY 10001</p>
+          <p class="text-muted mb-2"><i class="fas fa-envelope text-primary me-2"></i> hello@wondertoys.com</p>
+          <p class="text-muted mb-3"><i class="fas fa-phone-alt text-primary me-2"></i> +1 (800) 555-TOYS</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center text-md-between d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="mb-0 text-muted">&copy; 2026 WonderToys Store. All Rights Reserved.</p>
+        <div class="d-flex gap-3 text-muted fs-4 mt-3 mt-md-0">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/rtl-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

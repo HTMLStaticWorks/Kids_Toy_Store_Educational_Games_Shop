@@ -1,1 +1,566 @@
-test
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WonderToys - Kids Toy Store & Educational Games Shop</title>
+  <meta name="description" content="Premium Kids Toy Store & Educational Games Shop. High quality STEM toys, wooden puzzles, board games, and creative play for all age groups.">
+  <meta name="keywords" content="kids toy store, educational toys, STEM kits, board games, puzzles, baby toys, learning games">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <i class="fas fa-gift me-2"></i> <strong>Special Offer:</strong> Free Express Shipping on Educational & STEM Orders Over $49! <a href="shop.html" class="ms-2">Shop Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header-sticky">
+    <nav class="navbar navbar-expand-xl py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+          <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-lg text-primary"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-menu navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="index.html">Home 1 - Playful Retail</a></li>
+                <li><a class="dropdown-item" href="home-2.html">Home 2 - Educational Boutique</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="gift-guide.html">Gift Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="featured-brands.html">Brands</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item d-xl-none mt-2 pt-2 border-top">
+              <a href="signup.html" class="btn btn-toy-primary w-100 text-center"><i class="fas fa-user-plus me-1"></i> Sign Up</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <!-- Theme Toggle Button -->
+            <button class="header-action-btn theme-toggle-btn" title="Toggle Light/Dark Theme">
+              <i class="fas fa-moon text-primary"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="header-action-btn rtl-toggle-btn" title="Toggle RTL/LTR Layout" onclick="toggleRTL()">RTL</button>
+
+            <!-- Wishlist Button -->
+            <a href="wishlist.html" class="header-action-btn" title="Wishlist">
+              <i class="far fa-heart"></i>
+              <span class="badge-count wishlist-badge-count">0</span>
+            </a>
+
+            <!-- Cart Button -->
+            <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="badge-count cart-badge-count">0</span>
+            </a>
+
+            <!-- Sign Up Button (Desktop) -->
+            <a href="signup.html" class="btn btn-toy-primary d-none d-xl-inline-flex">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="container position-relative" style="z-index: 1;">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 hero-content-reveal">
+          <span class="skill-badge mb-3"><i class="fas fa-rocket me-1"></i> Spark Curiosity & Innovation</span>
+          <h1 class="display-4 fw-bold mb-3">Inspire Young Minds With STEM & Play!</h1>
+          <p class="lead text-secondary mb-4">Discover premium educational toys, wooden puzzles, coding robots, and creative kits designed to make learning an exciting daily adventure for kids of all ages.</p>
+          
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="shop.html" class="btn btn-toy-primary btn-lg"><i class="fas fa-gamepad me-2"></i> Explore All Toys</a>
+            <a href="gift-guide.html" class="btn btn-toy-secondary btn-lg"><i class="fas fa-gift me-2"></i> 2026 Gift Guide</a>
+          </div>
+
+          <div class="row g-3 pt-3 border-top border-light">
+            <div class="col-4">
+              <h3 class="fw-bold text-primary mb-0 stat-counter" data-target="10000">0</h3>
+              <small class="text-muted fw-semibold">Happy Children</small>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold text-secondary mb-0 stat-counter" data-target="500">0</h3>
+              <small class="text-muted fw-semibold">STEM Toys</small>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold text-success mb-0">99.4%</h3>
+              <small class="text-muted fw-semibold">Parent Approval</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="position-relative text-center d-flex justify-content-center">
+            <img src="assets/images/hero/hero-1.jpg" alt="Children playing with educational toys" class="img-fluid rounded-4 shadow-lg hover-lift" style="max-width: 80%; height: auto;">
+            <div class="glass-panel position-absolute p-3 text-start floating-element" style="bottom: -15px; left: 10%; max-width: 240px;">
+              <div class="d-flex align-items-center gap-3">
+                <div class="cat-icon-wrapper bg-warning text-white m-0" style="width:44px; height:44px; font-size:1.1rem;"><i class="fas fa-brain"></i></div>
+                <div>
+                  <h6 class="mb-0 fw-bold small">Brain Booster</h6>
+                  <small class="text-muted" style="font-size:0.75rem;">Top Rated by Educators</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Age Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="text-primary fw-bold text-uppercase">Targeted Play</span>
+        <h2 class="fw-bold">Shop Toys by Age Group</h2>
+      </div>
+
+      <div class="age-pill-container justify-content-md-center">
+        <button class="age-pill active" data-filter-age="all"><i class="fas fa-child"></i> All Ages</button>
+        <button class="age-pill" data-filter-age="0-2"><i class="fas fa-baby"></i> 0 – 2 Years (Infants)</button>
+        <button class="age-pill" data-filter-age="3-5"><i class="fas fa-shapes"></i> 3 – 5 Years (Toddlers)</button>
+        <button class="age-pill" data-filter-age="6-8"><i class="fas fa-robot"></i> 6 – 8 Years (Early STEM)</button>
+        <button class="age-pill" data-filter-age="9-12"><i class="fas fa-microscope"></i> 9 – 12 Years (Builders)</button>
+        <button class="age-pill" data-filter-age="13+"><i class="fas fa-chess-knight"></i> 13+ Years (Teens & Masters)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="text-secondary fw-bold text-uppercase">Curated Collections</span>
+          <h2 class="fw-bold mb-0">Browse Toy Categories</h2>
+        </div>
+        <a href="shop.html" class="btn btn-toy-outline">View All Categories &rarr;</a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?cat=stem" class="cat-card">
+            <div class="cat-icon-wrapper bg-primary text-white"><i class="fas fa-robot"></i></div>
+            <h6 class="fw-bold mb-1">STEM & Robots</h6>
+            <small class="text-muted">120 Products</small>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?cat=wooden" class="cat-card">
+            <div class="cat-icon-wrapper bg-warning text-white"><i class="fas fa-cubes"></i></div>
+            <h6 class="fw-bold mb-1">Wooden Toys</h6>
+            <small class="text-muted">85 Products</small>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?cat=crafts" class="cat-card">
+            <div class="cat-icon-wrapper bg-secondary text-white"><i class="fas fa-paint-brush"></i></div>
+            <h6 class="fw-bold mb-1">Arts & Crafts</h6>
+            <small class="text-muted">94 Products</small>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?cat=puzzles" class="cat-card">
+            <div class="cat-icon-wrapper bg-success text-white"><i class="fas fa-puzzle-piece"></i></div>
+            <h6 class="fw-bold mb-1">Puzzles & Games</h6>
+            <small class="text-muted">110 Products</small>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?cat=outdoor" class="cat-card">
+            <div class="cat-icon-wrapper bg-info text-white"><i class="fas fa-bicycle"></i></div>
+            <h6 class="fw-bold mb-1">Outdoor Toys</h6>
+            <small class="text-muted">65 Products</small>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?cat=baby" class="cat-card">
+            <div class="cat-icon-wrapper" style="background:#8b5cf6; color:#white;"><i class="fas fa-baby-carriage"></i></div>
+            <h6 class="fw-bold mb-1">Baby & Toddler</h6>
+            <small class="text-muted">78 Products</small>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Catalog -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-bold text-uppercase">Handpicked Favorites</span>
+        <h2 class="fw-bold">Top Educational Toys & Best Sellers</h2>
+      </div>
+
+      <div class="row g-4" id="featuredProductsGrid">
+        
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 product-filter-item gsap-reveal" data-age="6-8">
+          <div class="toy-card">
+            <div class="toy-card-img-wrapper">
+              <span class="toy-badge badge-stem">STEM Toy</span>
+              <div class="toy-actions-overlay">
+                <button class="action-btn" onclick="toggleWishlist(1, this)" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn btn-quick-view" data-name="Programmable Coding Robot Kit" data-price="$49.99" data-image="assets/images/toys/robot.jpg" data-age="6-8 Yrs" title="Quick View"><i class="far fa-eye"></i></button>
+              </div>
+              <img src="assets/images/toys/robot.jpg" alt="Programmable Coding Robot Kit" loading="lazy">
+            </div>
+            <div class="toy-card-body">
+              <span class="toy-category">STEM & Robotics</span>
+              <h5 class="toy-title"><a href="product-details.html">Programmable Coding Robot Kit</a></h5>
+              <div class="toy-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span>(48 reviews)</span>
+              </div>
+              <div class="toy-card-footer">
+                <div>
+                  <span class="price-current price-tag">$49.99</span>
+                  <span class="price-old price-tag">$59.99</span>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart(1, 'Programmable Coding Robot Kit', 49.99, 'assets/images/toys/robot.jpg', '6-8 Yrs')"><i class="fas fa-cart-plus me-1"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 product-filter-item gsap-reveal" data-age="3-5">
+          <div class="toy-card">
+            <div class="toy-card-img-wrapper">
+              <span class="toy-badge badge-new">New Arrival</span>
+              <div class="toy-actions-overlay">
+                <button class="action-btn" onclick="toggleWishlist(2, this)" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn btn-quick-view" data-name="Eco Wooden Stacking Blocks" data-price="$24.99" data-image="assets/images/toys/blocks.jpg" data-age="3-5 Yrs" title="Quick View"><i class="far fa-eye"></i></button>
+              </div>
+              <img src="assets/images/toys/blocks.jpg" alt="Eco Wooden Stacking Blocks" loading="lazy">
+            </div>
+            <div class="toy-card-body">
+              <span class="toy-category">Wooden Toys</span>
+              <h5 class="toy-title"><a href="product-details.html">Eco Wooden Stacking & Balance Blocks</a></h5>
+              <div class="toy-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(62 reviews)</span>
+              </div>
+              <div class="toy-card-footer">
+                <div>
+                  <span class="price-current price-tag">$24.99</span>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart(2, 'Eco Wooden Stacking Blocks', 24.99, 'assets/images/toys/blocks.jpg', '3-5 Yrs')"><i class="fas fa-cart-plus me-1"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 product-filter-item gsap-reveal" data-age="9-12">
+          <div class="toy-card">
+            <div class="toy-card-img-wrapper">
+              <span class="toy-badge badge-sale">20% OFF</span>
+              <div class="toy-actions-overlay">
+                <button class="action-btn" onclick="toggleWishlist(3, this)" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn btn-quick-view" data-name="3D Solar System Magnetic Puzzle" data-price="$29.99" data-image="assets/images/toys/puzzle.jpg" data-age="9-12 Yrs" title="Quick View"><i class="far fa-eye"></i></button>
+              </div>
+              <img src="assets/images/toys/puzzle.jpg" alt="3D Solar System Magnetic Puzzle" loading="lazy">
+            </div>
+            <div class="toy-card-body">
+              <span class="toy-category">Puzzles & Astronomy</span>
+              <h5 class="toy-title"><a href="product-details.html">3D Solar System Magnetic Puzzle</a></h5>
+              <div class="toy-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span>(31 reviews)</span>
+              </div>
+              <div class="toy-card-footer">
+                <div>
+                  <span class="price-current price-tag">$29.99</span>
+                  <span class="price-old price-tag">$36.99</span>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart(3, '3D Solar System Magnetic Puzzle', 29.99, 'assets/images/toys/puzzle.jpg', '9-12 Yrs')"><i class="fas fa-cart-plus me-1"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-md-4 col-lg-3 product-filter-item gsap-reveal" data-age="0-2">
+          <div class="toy-card">
+            <div class="toy-card-img-wrapper">
+              <span class="toy-badge badge-age">0-2 Yrs</span>
+              <div class="toy-actions-overlay">
+                <button class="action-btn" onclick="toggleWishlist(4, this)" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn btn-quick-view" data-name="Organic Teddy Bear & Rattle Set" data-price="$19.99" data-image="assets/images/toys/bear.jpg" data-age="0-2 Yrs" title="Quick View"><i class="far fa-eye"></i></button>
+              </div>
+              <img src="assets/images/toys/bear.jpg" alt="Organic Teddy Bear & Rattle Set" loading="lazy">
+            </div>
+            <div class="toy-card-body">
+              <span class="toy-category">Baby & Toddler</span>
+              <h5 class="toy-title"><a href="product-details.html">Organic Soft Teddy Bear & Rattle</a></h5>
+              <div class="toy-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(85 reviews)</span>
+              </div>
+              <div class="toy-card-footer">
+                <div>
+                  <span class="price-current price-tag">$19.99</span>
+                </div>
+                <button class="btn-add-cart" onclick="addToCart(4, 'Organic Soft Teddy Bear', 19.99, 'assets/images/toys/bear.jpg', '0-2 Yrs')"><i class="fas fa-cart-plus me-1"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="shop.html" class="btn btn-toy-primary btn-lg"><i class="fas fa-th-large me-2"></i> Explore Full Catalog (150+ Toys)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEM Spotlight Glassmorphism Banner -->
+  <section class="py-5">
+    <div class="container">
+      <div class="glass-banner p-4 p-md-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <span class="badge bg-danger text-white rounded-pill px-3 py-2 fw-bold mb-3"><i class="fas fa-atom me-1"></i> STEM Spotlight</span>
+            <h2 class="display-6 fw-bold mb-3">Empower Future Scientists & Engineers</h2>
+            <p class="lead text-secondary mb-4">Hands-on experiments in robotics, chemistry, astronomy, and logic puzzles curated by child development experts.</p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="skill-badge"><i class="fas fa-check-circle"></i> Logical Reasoning</span>
+              <span class="skill-badge"><i class="fas fa-check-circle"></i> Fine Motor Skills</span>
+              <span class="skill-badge"><i class="fas fa-check-circle"></i> Creative Problem Solving</span>
+            </div>
+            <a href="shop.html?cat=stem" class="btn btn-toy-secondary"><i class="fas fa-flask me-2"></i> Shop STEM Kits</a>
+          </div>
+          <div class="col-lg-5 text-center d-flex justify-content-center">
+            <img src="assets/images/stem/microscope.jpg" alt="Child with Microscope STEM Kit" class="img-fluid rounded-4 shadow-lg" style="max-width: 75%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-bold text-uppercase">Loved By Families</span>
+        <h2 class="fw-bold">What Parents & Teachers Say</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="text-warning mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-secondary italic">"The STEM coding kit kept my 7-year-old engaged for hours! High quality construction, clear instructions, and superb customer service."</p>
+            <div class="d-flex align-items-center gap-3 mt-auto pt-3 border-top">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width:44px; height:44px;">JS</div>
+              <div>
+                <h6 class="mb-0 fw-bold">Jennifer Smith</h6>
+                <small class="text-muted">Parent of 2 • Chicago, IL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="text-warning mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-secondary italic">"As a kindergarten teacher, I recommend WonderToys for their durable wooden building blocks and magnetic puzzles. Outstanding educational value!"</p>
+            <div class="d-flex align-items-center gap-3 mt-auto pt-3 border-top">
+              <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width:44px; height:44px;">MR</div>
+              <div>
+                <h6 class="mb-0 fw-bold">Marcus Reed</h6>
+                <small class="text-muted">Elementary Educator • Austin, TX</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="text-warning mb-3">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-secondary italic">"Ordered birthday gifts for my grandkids. Fast shipping, beautiful packaging, and the children absolutely loved the solar system puzzle!"</p>
+            <div class="d-flex align-items-center gap-3 mt-auto pt-3 border-top">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width:44px; height:44px;">EL</div>
+              <div>
+                <h6 class="mb-0 fw-bold">Eleanor Lewis</h6>
+                <small class="text-muted">Grandparent • Seattle, WA</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="glass-panel p-4 p-md-5 text-center position-relative overflow-hidden">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <span class="skill-badge mb-3"><i class="fas fa-envelope-open-text me-1"></i> VIP Kids Club</span>
+            <h2 class="fw-bold mb-3">Join Our Toy Club & Save 15%</h2>
+            <p class="text-secondary mb-4">Subscribe for exclusive birthday discount vouchers, early access to new STEM kits, and free educational play guides.</p>
+            
+            <form class="newsletter-form d-flex flex-column flex-sm-row gap-2 justify-content-center max-w-xl mx-auto">
+              <input type="email" class="form-control form-control-lg rounded-pill px-4" placeholder="Enter your email address..." required>
+              <button type="submit" class="btn btn-toy-primary btn-lg rounded-pill px-4"><i class="fas fa-paper-plane me-1"></i> Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Store Story -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center gap-2" href="index.html">
+            <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+            <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+          </a>
+          <p class="text-muted mb-4">Empowering the next generation through playful discovery, STEM learning kits, wooden craftsmanship, and creative toys designed for curious minds.</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Toy Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?cat=stem">STEM Kits</a></li>
+            <li><a href="shop.html?cat=wooden">Wooden Toys</a></li>
+            <li><a href="shop.html?cat=board-games">Board Games</a></li>
+            <li><a href="shop.html?cat=puzzles">Puzzles</a></li>
+            <li><a href="shop.html?cat=outdoor">Outdoor Fun</a></li>
+            <li><a href="shop.html?cat=baby">Baby & Toddler</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Support -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Store Locator & Hours</a></li>
+            <li><a href="gift-guide.html">Seasonal Gift Guide</a></li>
+            <li><a href="featured-brands.html">Featured Brands</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Secure Checkout</a></li>
+            <li><a href="contact.html">WhatsApp Support (UI)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Trust & Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <p class="text-muted mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> 123 Playful Way, Wonder City, NY 10001</p>
+          <p class="text-muted mb-2"><i class="fas fa-envelope text-primary me-2"></i> hello@wondertoys.com</p>
+          <p class="text-muted mb-3"><i class="fas fa-phone-alt text-primary me-2"></i> +1 (800) 555-TOYS</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center text-md-between d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="mb-0 text-muted">&copy; 2026 WonderToys Store. All Rights Reserved.</p>
+        <div class="d-flex gap-3 text-muted fs-4 mt-3 mt-md-0">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+              <img id="qvModalImg" src="assets/images/toys/robot.jpg" alt="Toy Preview" class="img-fluid rounded-4 shadow">
+            </div>
+            <div class="col-md-6">
+              <span id="qvModalAge" class="skill-badge mb-2">Recommended Age: 6-8 Yrs</span>
+              <h3 id="qvModalTitle" class="fw-bold mb-2">Educational Toy Title</h3>
+              <div class="text-warning mb-3">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (5.0)
+              </div>
+              <h4 id="qvModalPrice" class="price-tag text-primary mb-3">$49.99</h4>
+              <p class="text-secondary mb-4">Hands-on learning toy designed to build motor skills, logical reasoning, and creative thinking in kids.</p>
+              
+              <div class="d-flex align-items-center gap-3">
+                <div class="qty-control">
+                  <button class="qty-btn qty-minus">-</button>
+                  <input type="text" class="qty-input" value="1" readonly>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+                <button class="btn btn-toy-primary flex-grow-1" onclick="addToCart(1, 'Educational Toy', 49.99, 'assets/images/toys/robot.jpg')"><i class="fas fa-cart-plus me-1"></i> Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/rtl-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>

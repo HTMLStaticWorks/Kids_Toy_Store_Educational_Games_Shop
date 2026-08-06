@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Toy Brands - WonderToys</title>
+  <meta name="description" content="Explore world-leading educational toy brands: LEGO STEM, Melissa & Doug, NatGeo Kids, Hape, Ravensburger, and Learning Resources.">
+  <meta name="keywords" content="toy brands, LEGO STEM, Melissa and Doug, NatGeo toys, Hape wooden toys, Ravensburger puzzles">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <i class="fas fa-gift me-2"></i> <strong>Special Offer:</strong> Free Express Shipping on Educational & STEM Orders Over $49! <a href="shop.html" class="ms-2">Shop Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header-sticky">
+    <nav class="navbar navbar-expand-xl py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+          <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-lg text-primary"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-menu navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home 1 - Playful Retail</a></li>
+                <li><a class="dropdown-item" href="home-2.html">Home 2 - Educational Boutique</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="gift-guide.html">Gift Guide</a></li>
+            <li class="nav-item"><a class="nav-link active" href="featured-brands.html">Brands</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item d-xl-none mt-2 pt-2 border-top">
+              <a href="signup.html" class="btn btn-toy-primary w-100 text-center"><i class="fas fa-user-plus me-1"></i> Sign Up</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <!-- Theme Toggle Button -->
+            <button class="header-action-btn theme-toggle-btn" title="Toggle Theme">
+              <i class="fas fa-moon text-primary"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="header-action-btn rtl-toggle-btn" title="Toggle RTL/LTR Layout" onclick="toggleRTL()">RTL</button>
+            <a href="wishlist.html" class="header-action-btn" title="Wishlist">
+              <i class="far fa-heart"></i>
+              <span class="badge-count wishlist-badge-count">0</span>
+            </a>
+            <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="badge-count cart-badge-count">0</span>
+            </a>
+            <a href="signup.html" class="btn btn-toy-primary d-none d-xl-inline-flex">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="py-5 bg-white border-bottom text-center">
+    <div class="container">
+      <span class="text-primary fw-bold text-uppercase">World-Class Quality</span>
+      <h1 class="display-4 fw-bold mb-3">Our Premium Brand Partners</h1>
+      <p class="lead text-secondary max-w-2xl mx-auto">We partner exclusively with certified, award-winning toy manufacturers who prioritize safety, child development, and sustainable materials.</p>
+    </div>
+  </section>
+
+  <!-- Brand Directory Grid -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Brand 1: LEGO STEM -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-primary text-white rounded-3 p-3 text-center" style="width:60px; height:60px;"><i class="fas fa-cubes fa-2x"></i></div>
+              <div>
+                <h4 class="fw-bold mb-0">LEGO STEM</h4>
+                <small class="text-muted">Denmark • Robotics & Bricks</small>
+              </div>
+            </div>
+            <p class="text-secondary mb-4">Pioneers in hands-on building blocks, motor coding bricks, and spatial engineering kits for young builders.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="text-primary fw-bold">42 Products</span>
+              <a href="shop.html?brand=lego" class="btn btn-toy-outline btn-sm">Shop Brand &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 2: Melissa & Doug -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-success text-white rounded-3 p-3 text-center" style="width:60px; height:60px;"><i class="fas fa-tree fa-2x"></i></div>
+              <div>
+                <h4 class="fw-bold mb-0">Melissa & Doug</h4>
+                <small class="text-muted">USA • Wooden Toys</small>
+              </div>
+            </div>
+            <p class="text-secondary mb-4">Famous for screen-free wooden pretend play sets, magnetic dress-up dolls, and fine motor activity boards.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="text-success fw-bold">35 Products</span>
+              <a href="shop.html?brand=melissa" class="btn btn-toy-outline btn-sm">Shop Brand &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 3: National Geographic Kids -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-warning text-white rounded-3 p-3 text-center" style="width:60px; height:60px;"><i class="fas fa-globe-americas fa-2x"></i></div>
+              <div>
+                <h4 class="fw-bold mb-0">NatGeo STEM</h4>
+                <small class="text-muted">USA • Science & Earth</small>
+              </div>
+            </div>
+            <p class="text-secondary mb-4">Empowering young explorers with genuine fossil dig kits, rock tumblers, chemistry sets, and telescope gear.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="text-warning fw-bold">28 Products</span>
+              <a href="shop.html?brand=natgeo" class="btn btn-toy-outline btn-sm">Shop Brand &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 4: Hape Wooden Toys -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-secondary text-white rounded-3 p-3 text-center" style="width:60px; height:60px;"><i class="fas fa-shapes fa-2x"></i></div>
+              <div>
+                <h4 class="fw-bold mb-0">Hape Toys</h4>
+                <small class="text-muted">Germany • Eco Bamboo & Wood</small>
+              </div>
+            </div>
+            <p class="text-secondary mb-4">Sustainable wooden toys crafted from bamboo and water-based non-toxic paints for toddlers and infants.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="text-secondary fw-bold">31 Products</span>
+              <a href="shop.html?brand=hape" class="btn btn-toy-outline btn-sm">Shop Brand &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 5: Ravensburger Puzzles -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-info text-white rounded-3 p-3 text-center" style="width:60px; height:60px;"><i class="fas fa-puzzle-piece fa-2x"></i></div>
+              <div>
+                <h4 class="fw-bold mb-0">Ravensburger</h4>
+                <small class="text-muted">Germany • Puzzles & Memory</small>
+              </div>
+            </div>
+            <p class="text-secondary mb-4">Precision-cut 3D globe puzzles, age-appropriate floor jigsaws, and logic memory games for kids of all ages.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="text-info fw-bold">25 Products</span>
+              <a href="shop.html?brand=ravensburger" class="btn btn-toy-outline btn-sm">Shop Brand &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 6: Learning Resources -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 hover-lift">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-danger text-white rounded-3 p-3 text-center" style="width:60px; height:60px;"><i class="fas fa-robot fa-2x"></i></div>
+              <div>
+                <h4 class="fw-bold mb-0">Learning Resources</h4>
+                <small class="text-muted">UK • Classroom Teaching Aids</small>
+              </div>
+            </div>
+            <p class="text-secondary mb-4">Tested by educators worldwide to make math, science, and reading fun through tactile manipulatives.</p>
+            <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="text-danger fw-bold">39 Products</span>
+              <a href="shop.html?brand=lr" class="btn btn-toy-outline btn-sm">Shop Brand &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION 1: Manufacturer Quality & Safety Standards -->
+  <section class="py-5 bg-white border-top">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-success fw-bold text-uppercase"><i class="fas fa-shield-alt me-1"></i> Quality Guarantee</span>
+        <h2 class="fw-bold">Our 4-Point Brand Verification Standard</h2>
+        <p class="text-secondary max-w-2xl mx-auto">Every brand partner featured on WonderToys undergoes rigorous third-party lab inspection before reaching our shelves.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-md-3 col-sm-6">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-success text-white mx-auto mb-3" style="width:60px; height:60px; font-size:1.4rem;"><i class="fas fa-leaf"></i></div>
+            <h5 class="fw-bold mb-2">100% Non-Toxic</h5>
+            <p class="text-secondary small mb-0">BPA-free plastics, organic cottons, and food-grade silicone safe for mouth-testing toddlers.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-primary text-white mx-auto mb-3" style="width:60px; height:60px; font-size:1.4rem;"><i class="fas fa-tree"></i></div>
+            <h5 class="fw-bold mb-2">FSC Wood Certified</h5>
+            <p class="text-secondary small mb-0">Responsibly harvested timber and water-based non-toxic dyes that protect global forests.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-warning text-white mx-auto mb-3" style="width:60px; height:60px; font-size:1.4rem;"><i class="fas fa-graduation-cap"></i></div>
+            <h5 class="fw-bold mb-2">Educator Vetted</h5>
+            <p class="text-secondary small mb-0">Evaluated by child psychologists for age appropriateness, problem-solving, and engagement.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-info text-white mx-auto mb-3" style="width:60px; height:60px; font-size:1.4rem;"><i class="fas fa-check-double"></i></div>
+            <h5 class="fw-bold mb-2">ASTM & CE Certified</h5>
+            <p class="text-secondary small mb-0">Exceeds North American ASTM F963 and European EN71 safety testing protocols.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION 2: Brand Partnership & Wholesale Callout -->
+  <section class="py-5 bg-light border-top">
+    <div class="container">
+      <div class="glass-banner p-4 p-md-5">
+        <div class="row align-items-center gy-4 text-center text-lg-start">
+          <div class="col-lg-8">
+            <span class="badge bg-primary text-white rounded-pill px-3 py-2 fw-bold mb-2"><i class="fas fa-handshake me-1"></i> Become a Partner</span>
+            <h2 class="fw-bold mb-2">Are You an Innovative Toy Manufacturer?</h2>
+            <p class="text-secondary mb-0">Join the WonderToys marketplace network! We partner with ethical creators, STEM inventors, and wooden toy artisans around the world.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html?type=partner" class="btn btn-toy-primary btn-lg rounded-pill"><i class="fas fa-paper-plane me-2"></i> Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Store Story -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center gap-2" href="index.html">
+            <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+            <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+          </a>
+          <p class="text-muted mb-4">Empowering the next generation through playful discovery, STEM learning kits, wooden craftsmanship, and creative toys designed for curious minds.</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Toy Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?cat=stem">STEM Kits</a></li>
+            <li><a href="shop.html?cat=wooden">Wooden Toys</a></li>
+            <li><a href="shop.html?cat=board-games">Board Games</a></li>
+            <li><a href="shop.html?cat=puzzles">Puzzles</a></li>
+            <li><a href="shop.html?cat=outdoor">Outdoor Fun</a></li>
+            <li><a href="shop.html?cat=baby">Baby & Toddler</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Support -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Store Locator & Hours</a></li>
+            <li><a href="gift-guide.html">Seasonal Gift Guide</a></li>
+            <li><a href="featured-brands.html">Featured Brands</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Secure Checkout</a></li>
+            <li><a href="contact.html">WhatsApp Support (UI)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <p class="text-muted mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> 123 Playful Way, Wonder City, NY 10001</p>
+          <p class="text-muted mb-2"><i class="fas fa-envelope text-primary me-2"></i> hello@wondertoys.com</p>
+          <p class="text-muted mb-3"><i class="fas fa-phone-alt text-primary me-2"></i> +1 (800) 555-TOYS</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center text-md-between d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="mb-0 text-muted">&copy; 2026 WonderToys Store. All Rights Reserved.</p>
+        <div class="d-flex gap-3 text-muted fs-4 mt-3 mt-md-0">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/rtl-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

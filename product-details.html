@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmable Coding Robot Kit - WonderToys</title>
+  <meta name="description" content="Programmable Coding Robot Kit for ages 6-8. Hands-on STEM toy teaching logic, coding basics, and mechanical engineering. ASTM certified non-toxic.">
+  <meta name="keywords" content="coding robot kit, STEM toy, educational robot, kids logic toys, non toxic STEM kit">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <i class="fas fa-gift me-2"></i> <strong>Special Offer:</strong> Free Express Shipping on Educational & STEM Orders Over $49! <a href="shop.html" class="ms-2">Shop Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header-sticky">
+    <nav class="navbar navbar-expand-xl py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+          <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-lg text-primary"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-menu navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home 1 - Playful Retail</a></li>
+                <li><a class="dropdown-item" href="home-2.html">Home 2 - Educational Boutique</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="gift-guide.html">Gift Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="featured-brands.html">Brands</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item d-xl-none mt-2 pt-2 border-top">
+              <a href="signup.html" class="btn btn-toy-primary w-100 text-center"><i class="fas fa-user-plus me-1"></i> Sign Up</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <button class="header-action-btn theme-toggle-btn" title="Toggle Theme">
+              <i class="fas fa-moon text-primary"></i>
+            </button>
+            <button class="header-action-btn rtl-toggle-btn" title="Toggle RTL/LTR Layout" onclick="toggleRTL()">RTL</button>
+            <a href="wishlist.html" class="header-action-btn" title="Wishlist">
+              <i class="far fa-heart"></i>
+              <span class="badge-count wishlist-badge-count">0</span>
+            </a>
+            <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="badge-count cart-badge-count">0</span>
+            </a>
+            <a href="signup.html" class="btn btn-toy-primary d-none d-xl-inline-flex">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="py-3 bg-white border-bottom">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="shop.html">STEM & Robotics</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Programmable Coding Robot Kit</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Product Details Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Product Gallery Column -->
+        <div class="col-lg-6">
+          <div class="position-relative mb-3">
+            <img id="mainProductGalleryImg" src="assets/images/toys/robot.jpg" alt="Programmable Coding Robot Kit" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 480px; object-fit: cover;">
+            <span class="toy-badge badge-stem fs-6 px-3 py-2">STEM Certified</span>
+          </div>
+
+          <div class="d-flex gap-3 overflow-x-auto pb-2">
+            <img src="assets/images/toys/robot.jpg" alt="Thumb 1" class="rounded-3 border border-primary p-1 cursor-pointer" style="width:80px; height:80px; object-fit:cover;" onclick="document.getElementById('mainProductGalleryImg').src=this.src">
+            <img src="assets/images/stem/coding-bot.jpg" alt="Thumb 2" class="rounded-3 border p-1 cursor-pointer" style="width:80px; height:80px; object-fit:cover;" onclick="document.getElementById('mainProductGalleryImg').src=this.src">
+            <img src="assets/images/stem/stem-kit-1.jpg" alt="Thumb 3" class="rounded-3 border p-1 cursor-pointer" style="width:80px; height:80px; object-fit:cover;" onclick="document.getElementById('mainProductGalleryImg').src=this.src">
+          </div>
+        </div>
+
+        <!-- Product Info Column -->
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="skill-badge"><i class="fas fa-child me-1"></i> Recommended Age: 6 – 8 Years</span>
+            <span class="badge bg-success"><i class="fas fa-check-circle me-1"></i> In Stock</span>
+          </div>
+
+          <h1 class="fw-bold mb-2">Programmable Coding Robot Kit</h1>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="text-warning">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              <span class="text-dark fw-bold ms-1">4.8</span>
+            </div>
+            <a href="#reviews" class="text-muted text-decoration-underline">(48 Verified Parent Reviews)</a>
+            <span class="text-muted">| SKU: WT-ROBOT-608</span>
+          </div>
+
+          <div class="d-flex align-items-baseline gap-3 mb-4">
+            <h2 class="price-tag text-primary display-6 mb-0">$49.99</h2>
+            <span class="price-old fs-5">$59.99</span>
+            <span class="badge bg-danger rounded-pill px-3 py-1">Save 17%</span>
+          </div>
+
+          <p class="text-secondary lead fs-6 mb-4">Introduce your child to the fundamentals of block-based coding, mechanical robotics, and problem-solving without requiring a screen! Includes 50+ snap-together components, obstacle sensor wheels, and 20 challenge cards.</p>
+
+          <!-- Key Badges Grid -->
+          <div class="row g-3 mb-4 p-3 bg-white rounded-4 border">
+            <div class="col-6 col-md-3 text-center border-end">
+              <i class="fas fa-brain fa-2x text-primary mb-1"></i>
+              <small class="d-block fw-bold">Logic Building</small>
+            </div>
+            <div class="col-6 col-md-3 text-center border-md-end">
+              <i class="fas fa-shield-alt fa-2x text-success mb-1"></i>
+              <small class="d-block fw-bold">ASTM & CE Safe</small>
+            </div>
+            <div class="col-6 col-md-3 text-center border-end">
+              <i class="fas fa-leaf fa-2x text-warning mb-1"></i>
+              <small class="d-block fw-bold">BPA-Free Plastic</small>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <i class="fas fa-truck fa-2x text-info mb-1"></i>
+              <small class="d-block fw-bold">Free Express Delivery</small>
+            </div>
+          </div>
+
+          <!-- Purchase Controls -->
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <div class="qty-control me-2">
+              <button class="qty-btn qty-minus">-</button>
+              <input type="text" class="qty-input" value="1" readonly>
+              <button class="qty-btn qty-plus">+</button>
+            </div>
+
+            <button class="btn btn-toy-primary btn-lg flex-grow-1" onclick="addToCart(1, 'Programmable Coding Robot Kit', 49.99, 'assets/images/toys/robot.jpg', '6-8 Yrs')">
+              <i class="fas fa-cart-plus me-2"></i> Add To Cart
+            </button>
+
+            <button class="header-action-btn" onclick="toggleWishlist(1, this)" title="Save to Wishlist" style="width:50px; height:50px;">
+              <i class="far fa-heart fa-lg"></i>
+            </button>
+          </div>
+
+          <div class="p-3 rounded-3 bg-light border">
+            <small class="text-muted"><i class="fas fa-gift text-secondary me-2"></i> <strong>Gift Wrap Available:</strong> Add complimentary birthday greeting card & colorful gift bag at checkout.</small>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tabbed Specifications & Reviews -->
+      <div class="mt-5 pt-4">
+        <ul class="nav nav-tabs justify-content-center border-bottom-2 mb-4" id="productTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active fw-bold fs-5 px-4" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button">Overview & Benefits</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fw-bold fs-5 px-4" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button">Specifications & Safety</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fw-bold fs-5 px-4" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button">Parent Reviews (48)</button>
+          </li>
+        </ul>
+
+        <div class="tab-content bg-white p-4 p-md-5 rounded-4 shadow-sm border" id="productTabsContent">
+          
+          <!-- Tab 1: Overview -->
+          <div class="tab-pane fade show active" id="overview" role="tabpanel">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-7">
+                <h4 class="fw-bold mb-3">Screen-Free STEM Robotics for Early Learners</h4>
+                <p class="text-secondary">Designed specifically for children aged 6 to 8, this kit teaches spatial awareness, sequence planning, and mechanical cause-and-effect without screen fatigue.</p>
+                
+                <h5 class="fw-bold mt-4 mb-2">Key Learning Objectives:</h5>
+                <ul class="list-unstyled text-secondary">
+                  <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Algorithm Fundamentals:</strong> Plan bot movements using color-coded directional coding tiles.</li>
+                  <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Obstacle Avoidance:</strong> Built-in ultrasonic sensor detects objects up to 10cm away.</li>
+                  <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Collaborative Play:</strong> Great for siblings and classroom group challenges.</li>
+                </ul>
+              </div>
+              <div class="col-md-5">
+                <img src="assets/images/stem/coding-bot.jpg" alt="Child using Coding Kit" class="img-fluid rounded-4 shadow">
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Specs -->
+          <div class="tab-pane fade" id="specs" role="tabpanel">
+            <h4 class="fw-bold mb-3">Technical Specifications & Safety Compliance</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered align-middle">
+                <tbody>
+                  <tr><th class="bg-light w-25">Target Age Group</th><td>6 – 8 Years (Early Elementary)</td></tr>
+                  <tr><th class="bg-light">Package Contents</th><td>1x Robot Base, 50x Building Tiles, 20x Challenge Cards, 1x Instruction Guide</td></tr>
+                  <tr><th class="bg-light">Batteries Required</th><td>3x AA Batteries (Not included)</td></tr>
+                  <tr><th class="bg-light">Safety Certifications</th><td>ASTM F963-17 (USA), CE Certified (EU), EN71 Non-Toxic Lead Free</td></tr>
+                  <tr><th class="bg-light">Dimensions</th><td>25cm x 20cm x 10cm (9.8" x 7.8" x 3.9")</td></tr>
+                  <tr><th class="bg-light">Weight</th><td>0.82 kg (1.8 lbs)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 3: Reviews -->
+          <div class="tab-pane fade" id="reviews" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-4 text-center border-end">
+                <h1 class="display-3 fw-bold text-primary mb-0">4.8</h1>
+                <div class="text-warning fs-5 mb-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p class="text-muted">Based on 48 Parent & Educator Reviews</p>
+                <button class="btn btn-toy-outline rounded-pill"><i class="fas fa-pen me-1"></i> Write A Review</button>
+              </div>
+              <div class="col-md-8">
+                <div class="mb-4">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width:40px; height:40px;">JS</div>
+                    <div>
+                      <h6 class="mb-0 fw-bold">Jessica Miller</h6>
+                      <small class="text-muted">Verified Purchase • 2 weeks ago</small>
+                    </div>
+                  </div>
+                  <p class="text-secondary mb-0">"My 7-year-old son built the obstacle course on day one! Super durable plastic and very easy to follow guide."</p>
+                </div>
+                <hr>
+                <div>
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width:40px; height:40px;">DT</div>
+                    <div>
+                      <h6 class="mb-0 fw-bold">David Thompson</h6>
+                      <small class="text-muted">Verified Educator • 1 month ago</small>
+                    </div>
+                  </div>
+                  <p class="text-secondary mb-0">"Bought 5 kits for my STEM club classroom. Kids love setting up challenges! Highly recommended."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Store Story -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center gap-2" href="index.html">
+            <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+            <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+          </a>
+          <p class="text-muted mb-4">Empowering the next generation through playful discovery, STEM learning kits, wooden craftsmanship, and creative toys designed for curious minds.</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Toy Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?cat=stem">STEM Kits</a></li>
+            <li><a href="shop.html?cat=wooden">Wooden Toys</a></li>
+            <li><a href="shop.html?cat=board-games">Board Games</a></li>
+            <li><a href="shop.html?cat=puzzles">Puzzles</a></li>
+            <li><a href="shop.html?cat=outdoor">Outdoor Fun</a></li>
+            <li><a href="shop.html?cat=baby">Baby & Toddler</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Support -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Store Locator & Hours</a></li>
+            <li><a href="gift-guide.html">Seasonal Gift Guide</a></li>
+            <li><a href="featured-brands.html">Featured Brands</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Secure Checkout</a></li>
+            <li><a href="contact.html">WhatsApp Support (UI)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <p class="text-muted mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> 123 Playful Way, Wonder City, NY 10001</p>
+          <p class="text-muted mb-2"><i class="fas fa-envelope text-primary me-2"></i> hello@wondertoys.com</p>
+          <p class="text-muted mb-3"><i class="fas fa-phone-alt text-primary me-2"></i> +1 (800) 555-TOYS</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center text-md-between d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="mb-0 text-muted">&copy; 2026 WonderToys Store. All Rights Reserved.</p>
+        <div class="d-flex gap-3 text-muted fs-4 mt-3 mt-md-0">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/rtl-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

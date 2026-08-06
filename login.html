@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - WonderToys Kids Store</title>
+  <meta name="description" content="Sign in to your WonderToys account to track orders, access saved wishlists, and claim VIP Toy Club rewards.">
+  <meta name="keywords" content="toy store login, account sign in, parents login">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100 position-relative">
+
+  <!-- Floating Corner Toggles -->
+  <div class="position-absolute top-0 end-0 p-3 d-flex gap-2 z-3">
+    <button class="header-action-btn theme-toggle-btn" title="Toggle Light/Dark Theme">
+      <i class="fas fa-moon text-primary"></i>
+    </button>
+    <button class="header-action-btn rtl-toggle-btn" title="Toggle RTL/LTR Layout" onclick="toggleRTL()">RTL</button>
+  </div>
+
+  <!-- Login Main (No Navbar Header) -->
+  <main class="py-5 my-auto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-5">
+
+          <!-- Centered Brand Logo & Name at Top -->
+          <div class="text-center mb-4">
+            <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-2" href="index.html">
+              <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+              <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+            </a>
+          </div>
+
+          <!-- Glass Card Panel -->
+          <div class="glass-panel p-4 p-md-5">
+            
+            <div class="text-center mb-4">
+              <div class="brand-icon mx-auto mb-3" style="width:54px; height:54px; font-size:1.5rem;"><i class="fas fa-user-lock"></i></div>
+              <h2 class="fw-bold mb-1">Welcome Back!</h2>
+              <p class="text-secondary small">Access your parent rewards, saved wishlists & orders</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); showToast('Login successful! Welcome back to WonderToys.', 'success'); setTimeout(() => window.location.href='index.html', 1200);">
+              <div class="mb-3">
+                <label class="form-label fw-bold small">Email Address</label>
+                <div class="input-group">
+                  <span class="input-group-text rounded-start-pill bg-light border-end-0"><i class="fas fa-envelope text-muted"></i></span>
+                  <input type="email" class="form-control rounded-end-pill border-start-0" placeholder="parent@example.com" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <label class="form-label fw-bold small mb-0">Password</label>
+                  <a href="#" class="small text-primary fw-semibold" onclick="showToast('Password reset link sent to your email!', 'info'); return false;">Forgot?</a>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text rounded-start-pill bg-light border-end-0"><i class="fas fa-lock text-muted"></i></span>
+                  <input type="password" class="form-control rounded-end-pill border-start-0" placeholder="••••••••" required>
+                </div>
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="rememberMe" checked>
+                <label class="form-check-label small text-secondary" for="rememberMe">Remember me on this browser</label>
+              </div>
+
+              <button type="submit" class="btn btn-toy-primary btn-lg w-100 rounded-pill mb-3">
+                <i class="fas fa-sign-in-alt me-2"></i> Log In
+              </button>
+
+              <div class="text-center my-3">
+                <span class="text-muted small">or continue with</span>
+              </div>
+
+              <div class="d-flex gap-2 mb-4">
+                <button type="button" class="btn btn-outline-secondary flex-grow-1 rounded-pill small" onclick="showToast('Google login connected!', 'info')"><i class="fab fa-google text-danger me-1"></i> Google</button>
+                <button type="button" class="btn btn-outline-secondary flex-grow-1 rounded-pill small" onclick="showToast('Apple login connected!', 'info')"><i class="fab fa-apple me-1"></i> Apple</button>
+              </div>
+
+              <div class="text-center pt-3 border-top d-flex justify-content-between align-items-center">
+                <a href="index.html" class="small text-secondary"><i class="fas fa-arrow-left me-1"></i> Back to Store</a>
+                <div>
+                  <span class="text-secondary small">New here?</span>
+                  <a href="signup.html" class="fw-bold text-primary ms-1">Sign Up &rarr;</a>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Simple Auth Footer -->
+  <footer class="py-3 border-top mt-auto text-center text-muted small">
+    <div class="container">&copy; 2026 WonderToys Store. All Rights Reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/rtl-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

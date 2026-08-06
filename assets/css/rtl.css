@@ -1,0 +1,124 @@
+/* ==========================================================================
+   WonderToys RTL (Right-to-Left) Stylesheet for Arabic & Hebrew Support
+   ========================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* Typography & Direction adjustments */
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Margin and Padding Helpers */
+[dir="rtl"] .me-1 { margin-left: 0.25rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-2 { margin-left: 0.5rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-3 { margin-left: 1rem !important; margin-right: 0 !important; }
+[dir="rtl"] .me-4 { margin-left: 1.5rem !important; margin-right: 0 !important; }
+
+[dir="rtl"] .ms-1 { margin-right: 0.25rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-2 { margin-right: 0.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-3 { margin-right: 1rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-4 { margin-right: 1.5rem !important; margin-left: 0 !important; }
+[dir="rtl"] .ms-auto { margin-right: auto !important; margin-left: 0 !important; }
+[dir="rtl"] .me-auto { margin-left: auto !important; margin-right: 0 !important; }
+
+/* Text Alignment */
+[dir="rtl"] .text-end { text-align: left !important; }
+[dir="rtl"] .text-start { text-align: right !important; }
+[dir="rtl"] .text-md-end { text-align: left !important; }
+[dir="rtl"] .text-md-start { text-align: right !important; }
+
+/* Directional Icon Flips */
+[dir="rtl"] .fa-arrow-right,
+[dir="rtl"] .fa-chevron-right,
+[dir="rtl"] .fa-angle-right,
+[dir="rtl"] .fa-arrow-left,
+[dir="rtl"] .fa-chevron-left,
+[dir="rtl"] .fa-angle-left,
+[dir="rtl"] .fa-sign-in-alt,
+[dir="rtl"] .fa-long-arrow-alt-right {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* Navbar & Header */
+[dir="rtl"] .navbar-brand {
+  flex-direction: row;
+}
+
+[dir="rtl"] .badge-count {
+  left: -4px;
+  right: auto;
+}
+
+[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-menu-end {
+  right: auto !important;
+  left: 0 !important;
+}
+
+/* Form Controls & Pill Badges */
+[dir="rtl"] .input-group .rounded-start-pill {
+  border-radius: 0 50px 50px 0 !important;
+}
+
+[dir="rtl"] .input-group .rounded-end-pill {
+  border-radius: 50px 0 0 50px !important;
+}
+
+[dir="rtl"] .input-group-text.border-end-0 {
+  border-end-0: 1px solid var(--border-color) !important;
+  border-start-0: 0 !important;
+}
+
+[dir="rtl"] .form-control.border-start-0 {
+  border-start-0: 1px solid var(--border-color) !important;
+  border-end-0: 0 !important;
+}
+
+[dir="rtl"] .form-check {
+  padding-right: 1.5em;
+  padding-left: 0;
+}
+
+[dir="rtl"] .form-check .form-check-input {
+  float: right;
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+
+/* Breadcrumbs */
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+/* Cards & Badges */
+[dir="rtl"] .toy-badge {
+  right: auto;
+  left: 12px;
+}
+
+[dir="rtl"] .toy-wishlist-btn {
+  left: auto;
+  right: 12px;
+}
+
+/* Footer */
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+/* Toast Notification */
+[dir="rtl"] #toyToast {
+  right: auto;
+  left: 20px;
+}

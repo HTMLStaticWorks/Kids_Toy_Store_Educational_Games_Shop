@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Toy Gift Guide - WonderToys</title>
+  <meta name="description" content="Find the perfect educational gifts for birthdays, holidays, back-to-school, and special occasions categorized by age and budget.">
+  <meta name="keywords" content="kids gift guide, birthday toys, Christmas gift guide for kids, STEM gifts, budget toys under 25">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <i class="fas fa-gift me-2"></i> <strong>Special Offer:</strong> Free Express Shipping on Educational & STEM Orders Over $49! <a href="shop.html" class="ms-2">Shop Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header-sticky">
+    <nav class="navbar navbar-expand-xl py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+          <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars fa-lg text-primary"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-menu navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home 1 - Playful Retail</a></li>
+                <li><a class="dropdown-item" href="home-2.html">Home 2 - Educational Boutique</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gift-guide.html">Gift Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="featured-brands.html">Brands</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item d-xl-none mt-2 pt-2 border-top">
+              <a href="signup.html" class="btn btn-toy-primary w-100 text-center"><i class="fas fa-user-plus me-1"></i> Sign Up</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <!-- Theme Toggle Button -->
+            <button class="header-action-btn theme-toggle-btn" title="Toggle Theme">
+              <i class="fas fa-moon text-primary"></i>
+            </button>
+
+            <!-- RTL Toggle Button -->
+            <button class="header-action-btn rtl-toggle-btn" title="Toggle RTL/LTR Layout" onclick="toggleRTL()">RTL</button>
+            <a href="wishlist.html" class="header-action-btn" title="Wishlist">
+              <i class="far fa-heart"></i>
+              <span class="badge-count wishlist-badge-count">0</span>
+            </a>
+            <a href="cart.html" class="header-action-btn" title="Shopping Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="badge-count cart-badge-count">0</span>
+            </a>
+            <a href="signup.html" class="btn btn-toy-primary d-none d-xl-inline-flex">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-5 bg-white text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <span class="skill-badge mb-3 d-inline-flex"><i class="fas fa-magic me-1"></i> Stress-Free Gift Shopping</span>
+          <h1 class="display-4 fw-bold mb-3">The Ultimate Kids Gift Guide 2026</h1>
+          <p class="lead text-secondary mb-0">Unwrap joy and learning! Explore expert-recommended birthday gifts, holiday bundles, and budget-friendly educational toys tailored by age and interest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Occasion Cards -->
+  <section id="occasion-section" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-bold text-uppercase">Celebrations & Events</span>
+        <h2 class="fw-bold">Find Gifts by Occasion</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-secondary text-white mb-3" style="width:64px; height:64px; font-size:1.5rem;"><i class="fas fa-birthday-cake"></i></div>
+            <h4 class="fw-bold mb-2">Birthday Surprise Gifts</h4>
+            <p class="text-secondary small mb-3">Unforgettable STEM kits, wooden blocks, and board games guaranteed to bring smiles on their big day.</p>
+            <a href="shop.html" class="btn btn-toy-outline btn-sm">Explore Birthday Gifts &rarr;</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-primary text-white mb-3" style="width:64px; height:64px; font-size:1.5rem;"><i class="fas fa-tree"></i></div>
+            <h4 class="fw-bold mb-2">Holiday & Christmas</h4>
+            <p class="text-secondary small mb-3">Top-rated holiday presents, advent building calendars, and family strategy board games.</p>
+            <a href="shop.html" class="btn btn-toy-outline btn-sm">Explore Holiday Gifts &rarr;</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-success text-white mb-3" style="width:64px; height:64px; font-size:1.5rem;"><i class="fas fa-graduation-cap"></i></div>
+            <h4 class="fw-bold mb-2">Back to School STEM</h4>
+            <p class="text-secondary small mb-3">Equip young minds with microscopes, coding kits, and logic puzzles for academic confidence.</p>
+            <a href="shop.html" class="btn btn-toy-outline btn-sm">Explore STEM Gifts &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Budget Section -->
+  <section id="budget-section" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-success fw-bold text-uppercase">Budget Friendly Options</span>
+        <h2 class="fw-bold">Gifts Tailored To Your Budget</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Budget 1 -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 text-center border-top border-5 border-primary h-100">
+            <h3 class="fw-bold text-primary mb-2">Under $25</h3>
+            <p class="text-muted mb-4">Stocking stuffers, card games, mini wooden puzzles & art crafts.</p>
+            
+            <div class="toy-card mb-3">
+              <div class="toy-card-img-wrapper" style="padding-top:60%;">
+                <img src="assets/images/toys/blocks.jpg" alt="Blocks">
+              </div>
+              <div class="toy-card-body p-3">
+                <h6 class="fw-bold mb-1">Eco Wooden Stacking Blocks</h6>
+                <span class="price-current">$24.99</span>
+              </div>
+            </div>
+            <a href="shop.html" class="btn btn-toy-primary w-100">Shop Under $25</a>
+          </div>
+        </div>
+
+        <!-- Budget 2 -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 text-center border-top border-5 border-secondary h-100">
+            <h3 class="fw-bold text-secondary mb-2">$25 to $50</h3>
+            <p class="text-muted mb-4">Best-selling STEM kits, 3D puzzles, and outdoor play tents.</p>
+            
+            <div class="toy-card mb-3">
+              <div class="toy-card-img-wrapper" style="padding-top:60%;">
+                <img src="assets/images/toys/robot.jpg" alt="Robot">
+              </div>
+              <div class="toy-card-body p-3">
+                <h6 class="fw-bold mb-1">Programmable Coding Robot</h6>
+                <span class="price-current">$49.99</span>
+              </div>
+            </div>
+            <a href="shop.html" class="btn btn-toy-secondary w-100">Shop $25 – $50</a>
+          </div>
+        </div>
+
+        <!-- Budget 3 -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm rounded-4 p-4 text-center border-top border-5 border-success h-100">
+            <h3 class="fw-bold text-success mb-2">Premium ($50+)</h3>
+            <p class="text-muted mb-4">Deluxe robotics sets, microscope labs & complete gift bundles.</p>
+            
+            <div class="toy-card mb-3">
+              <div class="toy-card-img-wrapper" style="padding-top:60%;">
+                <img src="assets/images/stem/microscope.jpg" alt="Microscope">
+              </div>
+              <div class="toy-card-body p-3">
+                <h6 class="fw-bold mb-1">Deluxe STEM Microscope Kit</h6>
+                <span class="price-current">$79.99</span>
+              </div>
+            </div>
+            <a href="shop.html" class="btn btn-toy-outline w-100">Shop Premium Gifts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: Gift Concierge & Custom Wrapping -->
+  <section class="py-5 bg-white border-top">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-secondary fw-bold text-uppercase"><i class="fas fa-gift me-1"></i> Special Touch</span>
+        <h2 class="fw-bold">Gift Concierge & Custom Personalization</h2>
+        <p class="text-secondary max-w-2xl mx-auto">Make every present unforgettable with eco-friendly wrapping, handwritten greeting notes, and instant digital e-vouchers.</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Feature 1 -->
+        <div class="col-md-4">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-primary text-white mx-auto mb-3" style="width:64px; height:64px; font-size:1.5rem;"><i class="fas fa-box-open"></i></div>
+            <h4 class="fw-bold mb-2">Eco Gift Wrapping</h4>
+            <p class="text-secondary small mb-3">Reusable cotton gift bags and recyclable festive ribbon with custom birthday name tag.</p>
+            <span class="badge bg-primary rounded-pill px-3 py-2 fw-bold">$4.99 / Item</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-md-4">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-secondary text-white mx-auto mb-3" style="width:64px; height:64px; font-size:1.5rem;"><i class="fas fa-pen-fancy"></i></div>
+            <h4 class="fw-bold mb-2">Handwritten Message Cards</h4>
+            <p class="text-secondary small mb-3">Our team handwrites your personal birthday wish or congratulations message inside a keepsake card.</p>
+            <span class="badge bg-secondary rounded-pill px-3 py-2 fw-bold">$2.99 / Card</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-md-4">
+          <div class="glass-panel p-4 text-center h-100 hover-lift">
+            <div class="cat-icon-wrapper bg-success text-white mx-auto mb-3" style="width:64px; height:64px; font-size:1.5rem;"><i class="fas fa-credit-card"></i></div>
+            <h4 class="fw-bold mb-2">Instant E-Gift Vouchers</h4>
+            <p class="text-secondary small mb-3">Can't decide? Send an instant digital WonderToys voucher code straight to their email in seconds.</p>
+            <span class="badge bg-success rounded-pill px-3 py-2 fw-bold">$25 – $200 Values</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Store Story -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex align-items-center gap-2" href="index.html">
+            <div class="brand-icon"><i class="fas fa-shapes"></i></div>
+            <span>Wonder<span style="color:var(--secondary-color);">Toys</span></span>
+          </a>
+          <p class="text-muted mb-4">Empowering the next generation through playful discovery, STEM learning kits, wooden craftsmanship, and creative toys designed for curious minds.</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-muted hover-text-white"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Toy Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?cat=stem">STEM Kits</a></li>
+            <li><a href="shop.html?cat=wooden">Wooden Toys</a></li>
+            <li><a href="shop.html?cat=board-games">Board Games</a></li>
+            <li><a href="shop.html?cat=puzzles">Puzzles</a></li>
+            <li><a href="shop.html?cat=outdoor">Outdoor Fun</a></li>
+            <li><a href="shop.html?cat=baby">Baby & Toddler</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Support -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Store Locator & Hours</a></li>
+            <li><a href="gift-guide.html">Seasonal Gift Guide</a></li>
+            <li><a href="featured-brands.html">Featured Brands</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="checkout.html">Secure Checkout</a></li>
+            <li><a href="contact.html">WhatsApp Support (UI)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <p class="text-muted mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> 123 Playful Way, Wonder City, NY 10001</p>
+          <p class="text-muted mb-2"><i class="fas fa-envelope text-primary me-2"></i> hello@wondertoys.com</p>
+          <p class="text-muted mb-3"><i class="fas fa-phone-alt text-primary me-2"></i> +1 (800) 555-TOYS</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center text-md-between d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <p class="mb-0 text-muted">&copy; 2026 WonderToys Store. All Rights Reserved.</p>
+        <div class="d-flex gap-3 text-muted fs-4 mt-3 mt-md-0">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme-toggle.js"></script>
+  <script src="assets/js/rtl-toggle.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

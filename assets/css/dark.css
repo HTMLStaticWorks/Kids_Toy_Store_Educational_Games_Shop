@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Kids Toy Store & Educational Games Shop - Dark Mode Overrides
+   Activated when [data-theme="dark"] is present on <html> or <body>
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --bg-main: #0F172A;
+  --surface-card: #1E293B;
+  --surface-secondary: #334155;
+  --border-color: #334155;
+  --border-light: rgba(255, 255, 255, 0.1);
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+
+  --primary-color: #38BDF8;    /* Highlight Cyan in Dark Mode */
+  --primary-hover: #0284C7;
+  --secondary-color: #F472B6;  /* Pink Accent in Dark Mode */
+  --secondary-hover: #E11D48;
+
+  /* Dark Mode Glassmorphism */
+  --glass-bg: rgba(30, 41, 59, 0.85);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 16px 36px rgba(56, 189, 248, 0.2);
+}
+
+/* Dark Mode Specific Component Tweaks */
+[data-theme="dark"] body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] h6 {
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .header-sticky {
+  background: rgba(15, 23, 42, 0.92);
+  border-bottom: 1px solid #334155;
+}
+
+[data-theme="dark"] .navbar-brand {
+  color: #38BDF8 !important;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #CBD5E1;
+}
+
+[data-theme="dark"] .nav-link:hover, 
+[data-theme="dark"] .nav-link.active {
+  color: #38BDF8;
+  background: rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .dropdown-menu {
+  background-color: #1E293B;
+  border-color: #334155;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .dropdown-item {
+  color: #CBD5E1;
+}
+[data-theme="dark"] .dropdown-item:hover {
+  background-color: #334155;
+  color: #38BDF8;
+}
+
+[data-theme="dark"] .header-action-btn {
+  background: #334155;
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .header-action-btn:hover {
+  background: #38BDF8;
+  color: #0F172A;
+}
+
+[data-theme="dark"] .toy-card {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .toy-card-img-wrapper {
+  background: #0F172A;
+}
+
+[data-theme="dark"] .toy-card-footer {
+  border-top-color: #334155;
+}
+
+[data-theme="dark"] .toy-title {
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .price-current {
+  color: #38BDF8;
+}
+
+[data-theme="dark"] .btn-add-cart {
+  background: #334155;
+  color: #38BDF8;
+}
+[data-theme="dark"] .btn-add-cart:hover {
+  background: #38BDF8;
+  color: #0F172A;
+}
+
+[data-theme="dark"] .age-pill {
+  background: #1E293B;
+  border-color: #334155;
+  color: #CBD5E1;
+}
+
+[data-theme="dark"] .age-pill:hover,
+[data-theme="dark"] .age-pill.active {
+  background: #38BDF8;
+  border-color: #38BDF8;
+  color: #0F172A;
+}
+
+[data-theme="dark"] .cat-card,
+[data-theme="dark"] .brand-box,
+[data-theme="dark"] .blog-card {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .cart-table td {
+  background: #1E293B;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .qty-control {
+  background: #0F172A;
+  border-color: #334155;
+}
+
+[data-theme="dark"] .qty-btn,
+[data-theme="dark"] .qty-input {
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .modal-content {
+  background: #1E293B;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .footer {
+  background: #0F172A;
+  border-top-color: #334155;
+  color: #CBD5E1;
+}
+
+[data-theme="dark"] .footer h5 {
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .footer-links a {
+  color: #94A3B8;
+}
+
+[data-theme="dark"] .footer-links a:hover {
+  color: #38BDF8;
+}
+
+[data-theme="dark"] .footer .text-muted {
+  color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .hero-section {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 1) 100%);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: #0F172A;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25);
+  background-color: #0F172A;
+  color: #F8FAFC;
+}
